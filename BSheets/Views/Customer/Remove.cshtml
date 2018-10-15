@@ -1,0 +1,133 @@
+﻿@model BSheets.Models.Custom.Customer
+
+@{
+    ViewBag.Title = "Remove";
+}
+
+<h3>Are you sure you want to remove this?</h3>
+<div>
+    <h4>Company</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer_Company)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer_Company)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Primary_Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Primary_Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Alternate_Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Alternate_Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Website)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Website)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emails)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Billing_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Billing_Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Shipping_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shipping_Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Terms)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Terms)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Payment_Preference)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Payment_Preference)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Delivery_Preference)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Delivery_Preference)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Exemptions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Exemptions)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Remove" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
